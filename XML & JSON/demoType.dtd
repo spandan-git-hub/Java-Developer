@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT character (marine+)>
+<!ELEMENT marine (name, salary)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ATTLIST marine id ID #REQUIRED>
+<!ATTLIST marine lang (Java|C|Python) "Java"> 
+<!ATTLIST marine try CDATA #IMPLIED>

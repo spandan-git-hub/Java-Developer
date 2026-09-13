@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE character SYSTEM "demoType.dtd">
+<character>
+
+    <marine id="a1" lang="Java" try="Little">
+        <name>Rob Lucci</name>
+        <salary>1000</salary>
+    </marine>
+
+    <marine id="a2" lang="Python" try="more">
+        <name>Kaku</name>
+        <salary>900</salary>
+    </marine>
+
+</character>
