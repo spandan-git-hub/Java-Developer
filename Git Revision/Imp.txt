@@ -1,0 +1,39 @@
+git push --force
+
+A normal push only works when you're adding commits on top.       
+
+--force says:
+"I know the histories don't match. I'm intentionally overwriting the remote with my local version. Trust me."
+
+
+Tips:
+Anything you do locally stays local until you push. Be it reset or commit. 
+The remote only changes when you explicitly push.  
+If you, Reset locally → always force push immediately. 
+Never let local and remote diverge and then do a normal pull/push. 
+(git makes you do these, when it gets confused due to differences in local and remote histories)
+
+
+
+Extra Commands:
+
+
+git commit --amend 
+
+It modifies your very last commit. Instead of creating a brand new commit, it lets you edit or add to the one you just made.
+
+What it actually does?
+
+When you run git commit --amend, Git takes whatever is currently in your staging area, combines it with the previous commit, and replaces the old commit completely with a new one.
+
+
+
+Both git rebase and git rebase -i do the exact same foundational job: they rewrite your Git history by deleting old commits and generating brand-new ones. They take your work timeline, change the foundation underneath it, and re-apply your changes cleanly.
+
+How Are They Different?
+
+The difference is simply what you are trying to fix:
+
+git rebase (Standard Rebase) fixes Where your commits sit: It automatically moves your entire branch to the top of another branch (like main) so you have the latest updates from your team. You don't change the commits themselves; you just change their starting point.
+
+git rebase --interactive (Interactive Rebase) fixes What is inside your commits: It pauses the timeline and opens a menu. It lets you manually step in to squash (combine) multiple messy commits into one, drop (delete) mistakes, or reword old commit messages before sharing them.
