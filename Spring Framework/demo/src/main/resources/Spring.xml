@@ -6,7 +6,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+    <!-- you can even use autowire, qualifier, and primary in this xml file. -->
     <bean id="d1" class="com.example.Dev"> 
         <!-- <property name="age" value="12"/> -->
         <!-- <constructor-arg value="20"/> -->
