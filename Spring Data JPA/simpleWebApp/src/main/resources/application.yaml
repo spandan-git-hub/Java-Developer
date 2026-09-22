@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: simpleWebApp
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: xyz
+    password: abc
+server:
+  port: 8086
+  
